@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.side-nav {
+    width: 85px;
+    background-color: rgb(48, 48, 48);
+    height: 100vh;
+    position: fixed;
+}
+
+.side-nav.active{
+    width: 240px;
+
+
+}
+.logo_content{
+    height: 67px;
+    background-color: rgb(31, 31, 31);
+}
+
+.logo_content .logo {
+    color: #fff;
+    display: none;
+    background-color: rgb(143, 137, 137);
+    padding: 20px;
+}
+
+.logo_content .btn-toggle {
+    position: absolute;
+    color: whitesmoke;
+    right: 17px;
+    top: 7px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.side-nav ul {
+    padding: 20px;
+   
+}
+
+.side-nav ul li {
+    list-style: none;
+    
+}
+
+.side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    padding: 10px;
+    transition: .4s easy;
+
+}
+
+.side-nav ul li a:hover {
+    background-color: #fff;
+    color: rgb(20, 20, 20);
+    border-radius: 5px;
+}
+
+.side-nav ul a i {
+    padding-right: 35px;
+    padding-left: 20px;
+    font-size: 20px;
+    
+}
+
+.side-nav ul li a span {
+    display: none;
+}
+
+.side-nav ul li a span {
+    display: block;
+}
+/* main content */
+.wrapper{
+    position: relative;
+    left: 85px;
+    width: calc(100% - 85px);
+    background-color: rgb(233,233,233);
+    height: 100vh;
+    padding: 20px;
+    z-index: 2;
+}
+/* content */
+.content{
+    margin-left:100px; /* Same as the width of the sidenav */
+   
+}
+table {
+  margin-top: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}
+/* side section */
+
+
+/* Hide the side section by default */
+#side-section {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  #side-section.show {
+    right: 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  .bx-chevrons-left {
+    font-size: 24px; /* adjust the font size */
+    color: #333; /* change the color */
+    margin-right: 10px; /* adjust the margin */
+  }
+ /* second section */
+ #side-section-2 {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+#side-section-2.show {
+  right: 0;
+}
+
+  
+  /* loginpage */
+  .card-header {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10%;
+    height: 300px;
+    
+    
+  }
+  
